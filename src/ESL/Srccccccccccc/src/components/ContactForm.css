@@ -1,0 +1,99 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('./images/Contact.png') no-repeat center center / contain;
+    margin: auto;
+
+  }
+  
+ .contact-container h2 {
+    color:#007bff ; /* Couleur bleu clair pour le titre */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    /* background: rgba(30, 30, 30, 0.9); Fond transparent avec effet */
+    padding: 30px;
+    border-radius: 25px;
+    /* box-shadow: 0 0 20px rgba(0, 170, 255, 0.5); Ombre bleue */
+    width: 600px;
+    border:1px solid#007bff ;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 10px 0 5px;
+  }
+  
+  input,
+  textarea {
+    /* background-color: #0a0e1a; Fond sombre */
+    border: 1px solid#007bff ; /* Bordure bleu clair */
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80% ;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #494949; /* Texte d'indication plus clair */
+  
+  }
+  
+  textarea {
+    height: 80px;
+    resize: none; /* Désactiver le redimensionnement */
+  }
+  
+  .submit {
+    background-color: transparent; /* Bleu clair */
+    color: #fff;
+    border:#007bff  1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 20%;
+    margin: auto;
+
+  }
+  
+  .submit:hover {
+    background-color:#007bff ; /* Couleur plus foncée au survol */
+  }
+/*   
+  .contact-container::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-container::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+  } */

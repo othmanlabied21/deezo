@@ -1,0 +1,139 @@
+/* ESLServices.css */
+
+/* body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+  } */ .esl-container {
+    max-width: 1200px;
+    margin-top: 30px;
+    /* text-align: center; */
+  } 
+   
+   /* Add spacing between two accordions */
+   /* .esl-container {
+  margin-bottom: 50px;
+} */
+
+  /* 
+  .esl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bfff;
+  }
+  
+  .logo span {
+    color: #ffffff;
+  }
+  
+  .esl-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .esl-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .esl-nav ul li a.active {
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+  } */
+  
+  /* .esl-profile {
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+  } */
+  
+  .esl-services {
+    padding: 30px;
+  }
+  
+  .accordion-button {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    font-size: 18px;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-body {
+    background-color: #1e1e1e;
+    border: 1px solid #343a40;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .transform-btn {
+    background-color:#1e1e1e ;
+    border:  #008cba 1px solid;
+    padding: 10px 20px;
+    color: #00bfff;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .transform-btn:hover {
+    background-color: #008cba;
+    color: white;
+  }
+  
+  .esl-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons i {
+    font-size: 18px;
+    color: #00bfff;
+    cursor: pointer;
+  }
+  
+  .social-icons i:hover {
+    color: #008cba;
+  }
+.accordion-button:not(.collapsed) {
+    background-color: #1e1e1e!important; 
+    color: #007bff  !important;         
+    border-color: #007bff !important;   
+  }
+  
+
+  
+  .accordion-header {
+border-left: 2px solid #007bff ;
+border-radius: 5px
+}

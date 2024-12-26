@@ -1,0 +1,145 @@
+
+  /* Container */
+  .equipes-container {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 80vh; */
+    padding: 20px;
+    margin-top: 120px;
+  }
+
+  .add-team-btn {
+    background-color: transparent;
+    border: 2px solid #0088cc ;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s;
+    color: #0088cc;
+  }
+
+  .add-team-btn:hover {
+    background-color: #0088cc;
+    color: #0a0e1a;
+  }
+  
+  /* Main Section */
+  .equipes-main {
+    flex-grow: 1;
+  }
+  
+  .equipes-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .equipes-title {
+    font-size: 24px;
+    color: #00aaff;
+    margin: 0;
+  }
+  
+  .team-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #088ADB;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 60%;
+  }
+  
+  .team-item svg {
+    width: 20px;
+    height: 20px;
+    fill: #D0DDE5;
+    rotate: 180deg;
+  }
+
+  .team-name {
+    margin-left: 20px;
+  }
+  /* Section des membres de l'équipe */
+.team-members {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .team-members h2 {
+    font-size: 22px;
+    color: #00aaff;
+    margin-bottom: 10px;
+  }
+  
+  /* Conteneur des cartes de membres */
+  .member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Carte individuelle d'un membre */
+  .member-card {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  /* Section des membres */
+.team-members {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .member-card {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Bouton Ajouter un membre */
+  .add-member-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-member-btn:hover {
+    background-color: #0088cc;
+  }
+  

@@ -1,0 +1,102 @@
+.testimonials-container {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    height: 510px;
+    margin-top: 100px;
+  }
+  
+  .testimonials-container h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #007bff ;
+  }
+  .testimonials-container .p {
+    margin-bottom: 40px;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: #111C2B; /* Couleur de fond des cartes */
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #555; /* Couleur par défaut des avatars */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details {
+    text-align: left;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .testimonial-text {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .card-footer .likes {
+    color: #0f0; /* Couleur verte pour les likes */
+  }
+  
+  .card-footer .replies {
+    color: #007bff ; /* Couleur bleue pour le bouton reply */
+    cursor: pointer;
+  }
+  
+  .consult-button {
+    margin-top: 20px;
+  }
+  
+  .consult-button button {
+    background-color:transparent; /* Couleur du bouton */
+    color: #007bff ;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: #007bff  1px solid;
+  }
+  
+  .consult-button button:hover {
+    background-color: #007bff ; /* Couleur lors du survol */
+    color: white;
+  }
+
+  

@@ -1,0 +1,104 @@
+/* General Navbar Styles */
+.logo {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.navbar {
+  width: 1300px;
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo Styles */
+.navbar-logo .logo {
+  color: #088ADB ; /* Light blue color for the logo */
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Auth Buttons */
+.navbar-auth {
+  display: flex;
+  gap: 15px;
+}
+
+/* Navbar Links (other than the main navigation) */
+.nav-link {
+  color: white;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: #088ADB ;
+  font-size: 16px;
+}
+
+
+
+/* Navbar Toggler (hamburger button) */
+.navbar-toggler {
+  border: none;
+  color: #088ADB;
+}
+
+.navbar-toggler-icon {
+  background-color: #088ADB ;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Button Styles */
+.login-btn,
+.register-btn {
+  padding: 8px 20px;
+  border: none;
+  background-color: #088ADB ;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+  background-color: #007f9f; /* Darker blue on hover */
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-toggler {
+    display: block; /* Show the toggle button */
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    background-color: rgba(12, 158, 255, 0.9); /* Dark background for collapsed navbar */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Ensure Navbar logo is visible on smaller screens */
+@media (max-width: 768px) {
+  .navbar-logo .logo {
+    font-size: 20px;
+  }
+}
