@@ -1,0 +1,69 @@
+.add-member-form {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    border: #00aaff 1px solid;
+  }
+  
+  .add-member-form h2 {
+    color: #00aaff;
+    margin-bottom: 20px;
+  }
+  
+  .add-member-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .add-member-form input,
+  .add-member-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  .add-member-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-button {
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #0088cc;
+  }
+  
+  .cancel-button {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #666666;
+  }
+  

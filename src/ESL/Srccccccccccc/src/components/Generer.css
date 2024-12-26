@@ -1,0 +1,159 @@
+.main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 2rem;
+  color: #79c0ff;
+}
+
+.form-container {
+  background-color: #161b22;
+  border: 1px solid #007bff  ;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #c9d1d9;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #007bff ;
+  border-radius: 20px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-size: 1rem;
+
+}
+
+input::placeholder, textarea::placeholder {
+  color: #8b949e;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Buttons */
+.next-button, .generate-button {
+  background-color: #008cba;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover, .generate-button:hover {
+  background-color: #0379a0;
+}
+
+.form-container ul li {
+   list-style: none;
+
+}
+
+.progress-bar-container {
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    background-color:  #0d1117;
+    margin: 20px 0; /* Add margin for spacing */
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #007bff ; /* Green color for progress */
+    transition: width 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+ .next-button {
+    border-radius: 10px;
+    background-color: #007bff ;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .previous-button {
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #007bff ;
+    border: 1px solid ;
+  }
+  .previous-button:hover {
+    background-color: #007bff ;
+    color: white;
+    border: 1px solid #007bff ;
+
+  }
+
+  .previous-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    border: 1px solid #cccccc;
+    color: #121212;
+  }
+  /* Section Propositions Générées */
+.generated-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #161b22;
+    border: 1px solid #007bff ;
+    border-radius: 8px;
+    width: 50%;
+    margin: auto;
+
+  }
+  
+  .generated-section h2 {
+    color: #007bff ;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .generated-box {
+    background-color: #121212;
+    border: 1px solid #007bff ;
+    border-radius: 8px;
+    padding: 20px;
+    height: 200px;
+
+    font-size: 16px;
+    text-align: center;
+    color: #aaaaaa;
+  }
+  
+  .footer {
+    text-align: right;
+    background-color: #161b22;
+    color: #007bff ;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

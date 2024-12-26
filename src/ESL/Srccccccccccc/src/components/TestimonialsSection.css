@@ -1,0 +1,146 @@
+.testimonials-section {
+    padding: 50px;
+    text-align: center;
+
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .testimonial-card {
+    background-color: #112240;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+    text-align: left;
+  }
+  
+  .stars {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-card .reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .testimonial-card .reviewer-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .testimonial-card .reviewer {
+    font-weight: bold;
+  }
+  
+  .testimonial-card .date {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+  .consult-button {
+    color: white;
+    border: none;
+    /* padding: 10px 15px; */
+    /* border-radius: 5px; */
+    cursor: pointer;
+    font-size: 14px;
+    background-color: transparent;
+  }
+   /* .testimonials-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin-left: 33%;
+}
+
+
+
+.consult-button:hover {
+  background-color: #0056b3;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.user-details {
+  flex-grow: 1;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.date {
+  font-size: 12px;
+  color: #666;
+}
+
+.testimonial-text {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.likes, .replies {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.likes:hover, .replies:hover {
+  text-decoration: underline;
+} */
