@@ -1,14 +1,11 @@
-
-  /* Container */
   .equipes-container {
     display: flex;
     flex-direction: column;
-    /* min-height: 80vh; */
     padding: 20px;
     margin-top: 120px;
+    min-height: 450px;
   }
-
-  .add-team-btn {
+  /* .add-team-btn {
     background-color: transparent;
     border: 2px solid #0088cc ;
     border-radius: 10px;
@@ -16,39 +13,38 @@
     height: 40px;
     transition: all 0.2s;
     color: #0088cc;
-  }
+  } */
 
-  .add-team-btn:hover {
+  /* .add-team-btn:hover {
     background-color: #0088cc;
     color: #0a0e1a;
-  }
+  } */
   
-  /* Main Section */
-  .equipes-main {
+  /* .equipes-main {
     flex-grow: 1;
-  }
+  } */
   
-  .equipes-header {
+  /* .equipes-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
-  }
+  } */
   
-  .equipes-title {
+  /* .equipes-title {
     font-size: 24px;
     color: #00aaff;
     margin: 0;
-  }
+  } */
   
   .team-list {
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
   }
   
-  .team-item {
+  /* .team-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,15 +54,15 @@
     margin-bottom: 10px;
     color: #ffffff;
     cursor: pointer;
-    width: 60%;
-  }
-  
+    width: 100%;
+  } */
+/*   
   .team-item svg {
     width: 20px;
     height: 20px;
     fill: #D0DDE5;
     rotate: 180deg;
-  }
+  } */
 
   .team-name {
     margin-left: 20px;
@@ -82,17 +78,13 @@
     color: #00aaff;
     margin-bottom: 10px;
   }
-  
-  /* Conteneur des cartes de membres */
-  .member-cards {
+    .member-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-  
-  /* Carte individuelle d'un membre */
-  .member-card {
+    .member-card {
     background-color: #1a1a1a;
     color: #ffffff;
     padding: 10px 20px;
@@ -102,19 +94,16 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
-  /* Section des membres */
-.team-members {
+  .team-members {
     margin-top: 20px;
     text-align: center;
   }
-  
   .member-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-  
   .member-card {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -125,9 +114,7 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
-  
-  /* Bouton Ajouter un membre */
-  .add-member-btn {
+    .add-member-btn {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #00aaff;
@@ -138,8 +125,53 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
   .add-member-btn:hover {
     background-color: #0088cc;
   }
-  
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .team-item:hover {
+    background-color: #00aaff;
+    color: #ffffff;
+  }
+.team-item {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    width: 70%; /* Updated width */
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 10px auto; /* Centers the item horizontally */
+  }
+    
+  .equipes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .equipes-header h2 {
+    color: #0095ff;
+    font-size: 1.5rem;
+    margin: 0;  }
+  .add-equipe-button {
+    background-color: #088ADB;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }

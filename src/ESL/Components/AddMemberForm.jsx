@@ -1,191 +1,70 @@
-// import React, { useState } from 'react';
-// import './AddMemberForm.css';
-
-// const AddMemberForm = ({ onAddMember, onCancel }) => {
-//   const [formData, setFormData] = useState({
-//     firstName: '',
-//     lastName: '',
-//     personality: '',
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({ ...formData, [name]: value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     if (formData.firstName && formData.lastName) {
-//       onAddMember(`${formData.firstName} ${formData.lastName}`);
-//     }
-//   };
-
-//   return (
-//     <div className="add-member-form">
-//       <h2>Ajouter un membre</h2>
-//       <form onSubmit={handleSubmit}>
-//         <label>
-//           1. Nom
-//           <input
-//             type="text"
-//             name="firstName"
-//             value={formData.firstName}
-//             onChange={handleChange}
-//             placeholder="Entrez votre nom"
-//           />
-//         </label>
-//         <label>
-//           2. Prénom
-//           <input
-//             type="text"
-//             name="lastName"
-//             value={formData.lastName}
-//             onChange={handleChange}
-//             placeholder="Entrez votre prénom"
-//           />
-//         </label>
-//         <label>
-//           3. Choisissez votre personnalité
-//      <select
-//         name="personality"
-//         value={formData.personality}
-//         onChange={handleChange}
-//         >
-//         <option value="">-- Sélectionnez --</option>
-//         <option value="ISTJ">ISTJ (Logisticien)</option>
-//         <option value="ISFJ">ISFJ (Protecteur)</option>
-//         <option value="INFJ">INFJ (Conseiller)</option>
-//         <option value="INTJ">INTJ (Architecte)</option>
-//         <option value="ISTP">ISTP (Virtuose)</option>
-//         <option value="ISFP">ISFP (Artiste)</option>
-//         <option value="INFP">INFP (Médiateur)</option>
-//         <option value="INTP">INTP (Logicien)</option>
-//         <option value="ESTP">ESTP (Entrepreneur)</option>
-//         <option value="ESFP">ESFP (Artiste de la scène)</option>
-//         <option value="ENFP">ENFP (Inspirateur)</option>
-//         <option value="ENTP">ENTP (Innovateur)</option>
-//         <option value="ESTJ">ESTJ (Directeur)</option>
-//         <option value="ESFJ">ESFJ (Soutien)</option>
-//         <option value="ENFJ">ENFJ (Protagoniste)</option>
-//         <option value="ENTJ">ENTJ (Commandant)</option>
-//         </select>
-//         </label>
-//         <p>
-//           Vous ne savez pas ? <a href="#">Passez le test ici</a>
-//         </p>
-//         <div className="form-buttons">
-//         <button type="button" className="cancel-button" onClick={onCancel}>Annuler</button>
-//           <button type="submit" className="add-button">Ajouter</button>
-//         </div>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default AddMemberForm;
 import React, { useState } from 'react';
 import '../Styles/AddMemberForm.css';
-import PersonalityTest from './PersonalityTest'; // Import the PersonalityTest component
 
-const AddMemberForm = ({ onAddMember, onCancel }) => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    personality: '',
+const AddMemberForm = ({ onAddMember, onClose }) => {
+  const [newMember, setNewMember] = useState({
+    nom: '',
+    prenom: '',
+    personnalite: '',
   });
-  const [showTest, setShowTest] = useState(false); // New state to toggle the personality test
 
-  const handleChange = (e) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setNewMember({ ...newMember, [name]: value }); // Update the specific field in newMember
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.firstName && formData.lastName) {
-      onAddMember(`${formData.firstName} ${formData.lastName}`);
-    }
-  };
 
-  const handleTestClick = () => {
-    setShowTest(true); // Show the personality test when the link is clicked
+    const { nom, prenom, personnalite } = newMember;
+
+    // Validate all fields are filled
+    if (!nom.trim() || !prenom.trim() || !personnalite.trim()) {
+      alert('Veuillez remplir tous les champs.');
+      return;
+    }
+
+    onAddMember(newMember); // Pass the new member to the parent component
+    setNewMember({ nom: '', prenom: '', personnalite: '' }); // Reset form fields
   };
 
   return (
-    <div className="add-member-form">
-      {showTest ? (
-        // Show the personality test if the state is true
-        <PersonalityTest />
-      ) : (
-        <>
-          <h2>Ajouter un membre</h2>
-          <form onSubmit={handleSubmit}>
-            <label>
-              1. Nom
-              <input
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                placeholder="Entrez votre nom"
-              />
-            </label>
-            <label>
-              2. Prénom
-              <input
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                placeholder="Entrez votre prénom"
-              />
-            </label>
-            <label>
-              3. Choisissez votre personnalité
-              <select
-                name="personality"
-                value={formData.personality}
-                onChange={handleChange}
-              >
-                <option value="">-- Sélectionnez --</option>
-                <option value="ISTJ">ISTJ (Logisticien)</option>
-                <option value="ISFJ">ISFJ (Protecteur)</option>
-                <option value="INFJ">INFJ (Conseiller)</option>
-                <option value="INTJ">INTJ (Architecte)</option>
-                <option value="ISTP">ISTP (Virtuose)</option>
-                <option value="ISFP">ISFP (Artiste)</option>
-                <option value="INFP">INFP (Médiateur)</option>
-                <option value="INTP">INTP (Logicien)</option>
-                <option value="ESTP">ESTP (Entrepreneur)</option>
-                <option value="ESFP">ESFP (Artiste de la scène)</option>
-                <option value="ENFP">ENFP (Inspirateur)</option>
-                <option value="ENTP">ENTP (Innovateur)</option>
-                <option value="ESTJ">ESTJ (Directeur)</option>
-                <option value="ESFJ">ESFJ (Soutien)</option>
-                <option value="ENFJ">ENFJ (Protagoniste)</option>
-                <option value="ENTJ">ENTJ (Commandant)</option>
-              </select>
-            </label>
-            <p>
-              Vous ne savez pas ?{' '}
-              <a href="#home" onClick={handleTestClick}>
-                Passez le test ici
-              </a>
-            </p>
-            <div className="form-buttons">
-              <button type="button" className="cancel-button" onClick={onCancel}>
-                Annuler
-              </button>
-              <button type="submit" className="add-button">
-                Ajouter
-              </button>
-            </div>
-          </form>
-        </>
-      )}
-    </div>
+    <form className="add-member-form" onSubmit={handleSubmit}>
+      <h2>Ajouter un Membre</h2>
+      <input
+        type="text"
+        name="nom"
+        placeholder="Nom"
+        value={newMember.nom}
+        onChange={handleInputChange}
+        className="form-input"
+      />
+      <input
+        type="text"
+        name="prenom"
+        placeholder="Prénom"
+        value={newMember.prenom}
+        onChange={handleInputChange}
+        className="form-input"
+      />
+      <input
+        type="text"
+        name="personnalite"
+        placeholder="Personnalité"
+        value={newMember.personnalite}
+        onChange={handleInputChange}
+        className="form-input"
+      />
+      <div className="form-actions">
+        <button type="submit" className="submit-button">
+          Ajouter
+        </button>
+        <button type="button" className="close-button" onClick={onClose}>
+          Fermer
+        </button>
+      </div>
+    </form>
   );
 };
 
 export default AddMemberForm;
-

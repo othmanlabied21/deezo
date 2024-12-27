@@ -1,3 +1,13 @@
+/* Variables globales */
+:root {
+    --primary-color: #007bff;
+    --dark-bg: #0a0f1a;
+    --secondary-bg: #121826;
+    --border-color: #1f2937;
+    --text-color: #ffffff;
+    --button-hover: #0056b3;
+  }
+  
   .container {
     padding: 2rem 5%;
     text-align: center;
@@ -8,7 +18,23 @@
     color: #088ADB;
     margin-bottom: 1.5rem;
   }
-  
+
+  /* Section formulaire */
+  .form-section {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    /* position: relative; */
+    border: #007bff 1px solid;
+    width: 50%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   .back-btn {
     position: absolute; 
@@ -22,6 +48,24 @@
 
   }
   
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f2937;
+    color: var(--text-color);
+  }
 /* Section formulaire */
 .form-section {
   width: 800px;
@@ -58,7 +102,6 @@ textarea {
   background-color: transparent;
   /* color: var(--text-color); */
 }
-
   
   .buttons {
     display: flex;
