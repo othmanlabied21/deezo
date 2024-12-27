@@ -9,6 +9,10 @@ function Detaillesprojet() {
   return (
     <div className="project-container">
       <main className="content">
+                {/* Bouton Retour avec icône */}
+        <button className="back-btn" onClick={onBack}>
+          <i className="fa-solid fa-arrow-left"></i> 
+        </button>
         <h1>Projet 2</h1>
         <div className="tags">
           <button>Equipe 1</button>
@@ -29,10 +33,7 @@ function Detaillesprojet() {
           </div>
           <div className="footer">Powered by ChatGPT</div>
         </div>
-        {/* Bouton Retour avec icône */}
-        <button className="back-btn" onClick={onBack}>
-          <i className="fa-solid fa-arrow-left"></i> 
-        </button>
+
       </main>
     </div>
   );
