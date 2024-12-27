@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* Variables globales */
-=======
-
->>>>>>> master
-=======
-
->>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
 :root {
     --primary-color: #007bff;
     --dark-bg: #0a0f1a;
@@ -16,23 +8,17 @@
     --button-hover: #0056b3;
   }
   
-
-  
   .container {
     padding: 2rem 5%;
     text-align: center;
-
-
   }
   
   /* Titre principal */
   .title, .subtitle {
-    color: #007bff;
+    color: #088ADB;
     margin-bottom: 1.5rem;
   }
-  
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   /* Section formulaire */
   .form-section {
     background-color: var(--secondary-bg);
@@ -49,25 +35,19 @@
     flex-direction: column;
     align-items: center;
   }
-=======
->>>>>>> master
-=======
->>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
   
   .back-btn {
     position: absolute; 
-     top: 9.5rem; 
+    top: 9.5rem; 
     left: 5.5rem;
     background: transparent;
-    color: #007bff;
+    color: #088ADB;
     font-size: 1.5rem;
     cursor: pointer;
     border: none;
 
   }
   
-<<<<<<< HEAD
-<<<<<<< HEAD
   label {
     display: block;
     margin-bottom: 0.5rem;
@@ -86,19 +66,17 @@
     background-color: #1f2937;
     color: var(--text-color);
   }
-=======
-=======
->>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
 /* Section formulaire */
 .form-section {
-  background-color: var(--secondary-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
+  width: 800px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #088ADB;
+  border-radius: 20px;
   padding: 2rem;
-  max-width: 600px;
   margin: auto;
-  border: #007bff 1px solid;
-  width: 80%;
+  border: #088ADB 1px solid;
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -111,26 +89,19 @@ label {
   margin-bottom: 0.5rem;
   text-align: left;
   width: 100%; /* Stretch labels to full width of the form */
-  max-width: 90%; /* Ensure labels match input width */
 }
 
 /* Inputs and Textarea */
 input,
 textarea {
-  width: auto; /* Use full available width */
-  max-width: 90%; /* Center-align inputs relative to form-section */
+  width: 500px;
   padding: 0.8rem;
   margin-bottom: 1.5rem;
   border: none;
-  border-radius: 5px;
-  background-color: #1f2937;
-  color: var(--text-color);
+  border-radius: 20px;
+  background-color: transparent;
+  /* color: var(--text-color); */
 }
-
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
   
   .buttons {
     display: flex;
@@ -145,10 +116,7 @@ textarea {
     border-radius: 25px;
     font-size: 1rem;
     cursor: pointer;
-    color: var(--text-color);
-
-
-
+    color: #D0DDE5;
   }
   
   .reset-btn {
@@ -157,7 +125,7 @@ textarea {
   }
   
   .submit-btn {
-    background-color: #007bff ;
+    background-color: #088ADB ;
     margin: 20px;
 
 
@@ -166,12 +134,3 @@ textarea {
   .submit-btn:hover {
     background-color: var(--button-hover);
   }
-  
-
-
-
-
-
-
-
- 
