@@ -48,7 +48,11 @@ function ESLGenerate({ onBack }) {
     <div>
       <main className="main">
         <h2>Transformation des PFA en projets ESL</h2>
+<<<<<<< HEAD
         <p className="p1">Répond aux questions suivantes pour générer des études de cas convenables.</p>
+=======
+        <p>Répond aux questions suivantes pour générer des études de cas convenables.</p>
+>>>>>>> master
 
         <button className="back-btn" onClick={onBack}><i className="fa-solid fa-arrow-left"></i></button>
 
@@ -86,10 +90,17 @@ function ESLGenerate({ onBack }) {
                   onClick={handlePrevious}
                   disabled={step === 1}
                 >
+<<<<<<< HEAD
                   Précédent
                 </button>
                 <button className="next-button" onClick={handleNext}>
                   {step < questions.length / 2 ? "Suivant" : "Suivant"}
+=======
+                  Previous
+                </button>
+                <button className="next-button" onClick={handleNext}>
+                  {step < questions.length / 2 ? "Next" : "Summary"}
+>>>>>>> master
                 </button>
               </div>
             </div>
@@ -104,7 +115,11 @@ function ESLGenerate({ onBack }) {
                 ))}
               </ul>
               <button className="generate-button" onClick={handleGenerate}>
+<<<<<<< HEAD
                 Générer
+=======
+                Generate
+>>>>>>> master
               </button>
             </div>
           )}

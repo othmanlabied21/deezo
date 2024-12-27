@@ -8,6 +8,8 @@
     padding: 50px;
     gap: 20px;
     height:  438px;
+    min-height: 450px;
+
 }
 
 .services-title {
