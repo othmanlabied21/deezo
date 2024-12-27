@@ -13,7 +13,6 @@ import { BrowserRouter as Router} from "react-router-dom";
 import ProjectManagement from "./ESL/Components/ProjectManagement";
 
 
-
 function App() {
   const [activeComponent, setActiveComponent] = React.useState(null);
 
@@ -21,6 +20,7 @@ function App() {
     <Router>
       <div className="app">
         <Navbar2/>
+        <main className="content">
         <Routes>
           <Route path="/" element={<Section/>}/> 
           <Route path="/services" element={<ServicesSection setActiveComponent={setActiveComponent}/>}/>
@@ -28,8 +28,8 @@ function App() {
           <Route path="/contact" element={<ContactForm />}/>
           <Route path="/Testimonials" element={<Testimonials/>}/>
           <Route path="/Projets" element={<ProjectManagement />}/>
-
         </Routes>
+          </main>
         <Footer/>
       </div>
     </Router>

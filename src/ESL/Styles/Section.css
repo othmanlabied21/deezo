@@ -8,7 +8,10 @@
   color: #fff;
   position: relative;
   z-index: 1;
+<<<<<<< HEAD
   min-height: 450px;
+=======
+>>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
 }
 
 #title {

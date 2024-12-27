@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Variables globales */
 =======
 
 >>>>>>> master
+=======
+
+>>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
 :root {
     --primary-color: #007bff;
     --dark-bg: #0a0f1a;
@@ -28,6 +32,7 @@
   }
   
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* Section formulaire */
   .form-section {
     background-color: var(--secondary-bg);
@@ -46,6 +51,8 @@
   }
 =======
 >>>>>>> master
+=======
+>>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
   
   .back-btn {
     position: absolute; 
@@ -59,6 +66,7 @@
 
   }
   
+<<<<<<< HEAD
 <<<<<<< HEAD
   label {
     display: block;
@@ -79,6 +87,8 @@
     color: var(--text-color);
   }
 =======
+=======
+>>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
 /* Section formulaire */
 .form-section {
   background-color: var(--secondary-bg);
@@ -117,7 +127,10 @@ textarea {
   color: var(--text-color);
 }
 
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> e6e84f3f6acdb4a9647ab7c00725328b6a5ea500
   
   .buttons {
     display: flex;
