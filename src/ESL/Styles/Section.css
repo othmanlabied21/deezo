@@ -8,6 +8,7 @@
   color: #fff;
   position: relative;
   z-index: 1;
+  min-height: 450px;
 }
 
 #title {
@@ -28,7 +29,7 @@
 .hero-button {
   display: inline-block;
   padding: 10px 32px;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: transparent;
   color: #088ADB;
   font-size: 16px;
