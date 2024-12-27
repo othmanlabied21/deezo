@@ -86,10 +86,10 @@ function ESLGenerate({ onBack }) {
                   onClick={handlePrevious}
                   disabled={step === 1}
                 >
-                  Previous
+                  Précédent
                 </button>
                 <button className="next-button" onClick={handleNext}>
-                  {step < questions.length / 2 ? "Next" : "Summary"}
+                  {step < questions.length / 2 ? "Suivant" : "Suivant"}
                 </button>
               </div>
             </div>
@@ -104,7 +104,7 @@ function ESLGenerate({ onBack }) {
                 ))}
               </ul>
               <button className="generate-button" onClick={handleGenerate}>
-                Generate
+                Générer
               </button>
             </div>
           )}
