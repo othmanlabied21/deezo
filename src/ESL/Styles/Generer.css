@@ -5,13 +5,21 @@
 
 .main h2 {
   font-size: 2rem;
-  color: #79c0ff;
+  color: #088ADB;
+}
+
+main .p1 {
+  color: #c9d1d9;
+
 }
 
 .form-container {
-  background-color: #161b22;
-  border: 1px solid #007bff  ;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #007bff;
+  border-radius: 20px;
   padding: 2rem;
   max-width: 600px;
   margin: 2rem auto;
@@ -105,6 +113,7 @@ textarea {
     cursor: pointer;
     color: #007bff ;
     border: 1px solid ;
+    transition: all 0.2s;
   }
   .previous-button:hover {
     background-color: #007bff ;
@@ -114,10 +123,10 @@ textarea {
   }
 
   .previous-button:disabled {
-    background-color: #cccccc;
+    background-color: transparent;
     cursor: not-allowed;
-    border: 1px solid #cccccc;
-    color: #121212;
+    border: 1px solid #13537b;
+    color: #13537b;
   }
   /* Section Propositions Générées */
 .generated-section {

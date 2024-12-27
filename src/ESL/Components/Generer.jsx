@@ -48,7 +48,7 @@ function ESLGenerate({ onBack }) {
     <div>
       <main className="main">
         <h2>Transformation des PFA en projets ESL</h2>
-        <p>Répond aux questions suivantes pour générer des études de cas convenables.</p>
+        <p className="p1">Répond aux questions suivantes pour générer des études de cas convenables.</p>
 
         <button className="back-btn" onClick={onBack}><i className="fa-solid fa-arrow-left"></i></button>
 
