@@ -27,16 +27,22 @@ const Navbar = () => {
             <Link className="nav-link" to="/services">Services</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/Equipes">Equipes</Link>
+            <Link className="nav-link" to="/Projets">Projets</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/Projets">Projets</Link>
+            <Link className="nav-link" to="/Equipes">Equipes</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/Testimonials">Testimonials</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/contact">Contact</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/FAQ">FAQ</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/Guide">Guide</Link>
           </li>
         </ul>
         <div className="profileCont" onClick={toggleMenu}>
