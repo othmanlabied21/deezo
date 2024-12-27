@@ -1,30 +1,30 @@
 /* General Layout */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0a0e1a;
+    /* font-family: Arial, sans-serif; */
+    /* background-color: #0a0e1a; */
     color: #d0d4de;
-    margin: 0;
+    /* margin: 0; */
   }
   
   #project-management {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 200vh; */
     margin-top: 110px;
-    min-height: 450px;
+    /* min-height: 450px; */
   }
   
   /* Navbar */
-  .navbar {
+  /* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #121826;
     color: white;
-  }
+  } */
   
-  .logo {
+  /* .logo {
     font-size: 1.5rem;
     color: #0095ff;
   }
@@ -45,12 +45,12 @@ body {
   .nav-links .active {
     color: #0095ff;
     font-weight: bold;
-  }
+  } */
   
-  .profile-icon {
+  /* .profile-icon {
     font-size: 1.5rem;
     cursor: pointer;
-  }
+  } */
   
   /* Main Content */
   .projects-section {
@@ -154,13 +154,11 @@ body {
     align-items: center;
     margin-bottom: 20px;
   }
-  
   .projects-header h2 {
     color: #0095ff;
     font-size: 1.5rem;
     margin: 0;
   }
-  
   .add-project-button {
     background-color: #088ADB;
     color: white;

@@ -16,16 +16,16 @@
     color: #00aaff;
     margin-bottom: 20px;
   }
-  
+/*   
   .add-member-form label {
     display: block;
     text-align: left;
     margin-bottom: 10px;
     font-size: 14px;
     margin-left: 50px;
-  }
+  } */
   
-  .add-member-form input,
+  /* .add-member-form input,
   .add-member-form select {
     width: 100%;
     padding: 10px;
@@ -35,15 +35,15 @@
     border-radius: 5px;
     background-color: #1a1a1a;
     color: #ffffff;
-  }
+  } */
   
-  .add-member-form .form-buttons {
+  /* .add-member-form .form-buttons {
     display: flex;
     justify-content: space-between;
-  }
+  } */
   
-  .add-button {
-    background-color: #00aaff;
+  /* .add-button {
+    background-color: transparent;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -56,8 +56,8 @@
   .add-button:hover {
     background-color: #0088cc;
   }
-  
-  .cancel-button {
+   */
+  /* .cancel-button {
     background-color: #444444;
     color: #ffffff;
     border: none;
@@ -69,5 +69,59 @@
   
   .cancel-button:hover {
     background-color: #666666;
+  } */
+  .add-member-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #00aaff;
+    margin-top: 20px;
+    width: 50%;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+    width: 300px;
+    background-color: transparent;
+  }
+  
+  .submit-button {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0088cc;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .close-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #e60000;
   }
   
