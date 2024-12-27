@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .add-member-form {
+=======
+   .add-member-form {
+>>>>>>> master
     background-color: transparent;
     color: #ffffff;
     padding: 20px;
@@ -8,6 +12,11 @@
     margin: 50px auto;
     text-align: center;
     border: #00aaff 1px solid;
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> master
   }
   
   .add-member-form h2 {
@@ -20,11 +29,19 @@
     text-align: left;
     margin-bottom: 10px;
     font-size: 14px;
+<<<<<<< HEAD
+=======
+    margin-left: 50px;
+>>>>>>> master
   }
   
   .add-member-form input,
   .add-member-form select {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 80%;
+>>>>>>> master
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -32,6 +49,12 @@
     border-radius: 5px;
     background-color: #1a1a1a;
     color: #ffffff;
+<<<<<<< HEAD
+=======
+    display: block; /* Ensures inputs are displayed below labels */
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> master
   }
   
   .add-member-form .form-buttons {
@@ -47,6 +70,10 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+<<<<<<< HEAD
+=======
+    margin-left: 80px;
+>>>>>>> master
   }
   
   .add-button:hover {

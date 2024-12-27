@@ -1,0 +1,183 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0e1a;
+    color: #d0d4de;
+    margin: 0;
+  }
+  
+  #project-management {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 110px;
+    min-height: 450px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121826;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #0095ff;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    color: #d0d4de;
+  }
+  
+  .nav-links .active {
+    color: #0095ff;
+    font-weight: bold;
+  }
+  
+  .profile-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Main Content */
+  .projects-section {
+    display: flex;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .history {
+    flex: 1;
+    background-color: #121826;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+  
+  .history h3 {
+    color: #0095ff;
+  }
+  
+  .history-group h4 {
+    color: #088ADB;
+    margin: 10px 0;
+  }
+  
+  .history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .history li {
+    margin: 5px 0;
+  }
+  
+  /* Project List */
+  .projects {
+    flex: 2;
+  }
+  
+  .projects h2 {
+    color: #0095ff;
+    margin-bottom: 20px;
+  }
+  
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #121826;
+    border: 1px solid #088ADB;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .project-card:hover {
+    background-color: #0095ff;
+    color: white;
+  }
+  
+  .project-card button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121826;
+    color: white;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    color: #0095ff;
+  }
+  
+  .social-icons span {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  /* Projects Header */
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .projects-header h2 {
+    color: #0095ff;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .add-project-button {
+    background-color: #088ADB;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .add-project-button:hover {
+    background-color: #0079c1;
+  }
+  

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* Variables globales */
+=======
+
+>>>>>>> master
 :root {
     --primary-color: #007bff;
     --dark-bg: #0a0f1a;
@@ -23,6 +27,7 @@
     margin-bottom: 1.5rem;
   }
   
+<<<<<<< HEAD
   /* Section formulaire */
   .form-section {
     background-color: var(--secondary-bg);
@@ -39,6 +44,8 @@
     flex-direction: column;
     align-items: center;
   }
+=======
+>>>>>>> master
   
   .back-btn {
     position: absolute; 
@@ -52,6 +59,7 @@
 
   }
   
+<<<<<<< HEAD
   label {
     display: block;
     margin-bottom: 0.5rem;
@@ -70,6 +78,46 @@
     background-color: #1f2937;
     color: var(--text-color);
   }
+=======
+/* Section formulaire */
+.form-section {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  border: #007bff 1px solid;
+  width: 80%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  width: 100%; /* Stretch labels to full width of the form */
+  max-width: 90%; /* Ensure labels match input width */
+}
+
+/* Inputs and Textarea */
+input,
+textarea {
+  width: auto; /* Use full available width */
+  max-width: 90%; /* Center-align inputs relative to form-section */
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f2937;
+  color: var(--text-color);
+}
+
+>>>>>>> master
   
   .buttons {
     display: flex;
