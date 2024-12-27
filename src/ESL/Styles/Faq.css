@@ -1,6 +1,6 @@
 /* Conteneur principal */
 .faq-container {
-    background-color: #0d0f14;
+    background-color: transparent;
     color: #ffffff;
     max-width: 800px;
     margin: 0 auto;
@@ -8,7 +8,7 @@
     font-family: 'Arial', sans-serif;
     border-radius: 8px;
     min-height: 450px;
-
+margin-top: 30px;
   }
   
   /* Titre principal */
