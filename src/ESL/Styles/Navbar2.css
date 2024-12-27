@@ -1,9 +1,10 @@
 nav {
   position: fixed !important;
-  margin-top: 30px !important;
-  width: 90%;
+  margin-top: 60px !important;
+  width: 80%;
   border: 2px solid #088ADB;
-  margin: 20px 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50px;
 }
 
@@ -35,18 +36,39 @@ nav {
   pointer-events: auto;
 }
   
-.nav-link {
-  color: #d2e1eb !important;
-  font-size: 18px !important;
+.navbar-nav .nav-link {
+  position: relative;
+  color: #d2e1eb;
+  font-size: 16px !important;
   margin-right: 30px;
-  font-weight: 500 !important;
+  font-weight: 500;
 }
   
-.nav-link:hover {
-  color: #088ADB !important;
-  font-weight: 500 !important;
+.navbar-nav .nav-link:hover {
+  color: #088ADB;
+  font-weight: 500;
 }
-  
+
+.navbar-nav .nav-link.active {
+  color: #088ADB;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Initially no width */
+  height: 3px; /* Border thickness */
+  background-color: #088ADB; /* Border color */
+  transition: 0.3s ease; /* Optional transition for smoothness */
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
 
 @media (min-width: 768x) ,(max-width: 1024px) {
   .logo {
