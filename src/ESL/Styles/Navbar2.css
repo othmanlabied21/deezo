@@ -15,7 +15,13 @@ nav {
 .profile {
   width: 45px;
   margin-right: 30px;
-} 
+  transition: all 0.2s;
+}
+
+.profile:hover {
+  filter: brightness(0.8); /* Reduces brightness for a darker effect */
+  cursor: pointer; /* Indicates interactivity */
+}
 
 .navbar {
   background-color : rgba(15, 72, 111, 0.2);
@@ -31,7 +37,7 @@ nav {
   
 .nav-link {
   color: #d2e1eb !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   margin-right: 30px;
   font-weight: 500 !important;
 }
