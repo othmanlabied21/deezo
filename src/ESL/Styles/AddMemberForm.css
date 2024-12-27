@@ -1,4 +1,4 @@
-.add-member-form {
+   .add-member-form {
     background-color: transparent;
     color: #ffffff;
     padding: 20px;
@@ -8,6 +8,8 @@
     margin: 50px auto;
     text-align: center;
     border: #00aaff 1px solid;
+
+    
   }
   
   .add-member-form h2 {
@@ -20,11 +22,12 @@
     text-align: left;
     margin-bottom: 10px;
     font-size: 14px;
+    margin-left: 50px;
   }
   
   .add-member-form input,
   .add-member-form select {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -32,6 +35,9 @@
     border-radius: 5px;
     background-color: #1a1a1a;
     color: #ffffff;
+    display: block; /* Ensures inputs are displayed below labels */
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .add-member-form .form-buttons {
@@ -47,6 +53,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 80px;
   }
   
   .add-button:hover {

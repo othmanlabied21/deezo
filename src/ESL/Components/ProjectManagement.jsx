@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/ProjectManagement.css'; // Import the CSS file
+import '../Styles/ProjectManagement.css'; 
 
 const ProjectManagement = () => {
   return (
