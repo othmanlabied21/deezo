@@ -14,37 +14,44 @@ main .p1 {
 }
 
 .form-container {
-  display: flex;
-  flex-direction: column;
+  width: 800px;
+  background-color: transparent;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid #007bff;
-  border-radius: 20px;
+  border: 2px solid #088ADB;
+  border-radius: 40px;
   padding: 2rem;
-  max-width: 600px;
-  margin: 2rem auto;
+  margin: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
   margin-bottom: 1.5rem;
-  text-align: left;
 }
 
-label {
+.form-group .labelG {
   display: block;
   margin-bottom: 0.5rem;
-  color: #c9d1d9;
+  padding-left: 35px; /* Spacing to offset label */
+  color: white; /* Consistent label color */
+  font-size: 20px; /* Ensures readability */
+  text-align: left; /* Prevents centering */
 }
 
-input, textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #007bff ;
+.form-group input, 
+.form-group textarea {
+  width: 500px; /* Maximum width for large screens */
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
   border-radius: 20px;
-  background-color: #0d1117;
-  color: #c9d1d9;
-  font-size: 1rem;
-
+  margin: auto;
+  border: 2px solid #088ADB; /* Adds a border for better visibility */
+  background-color: transparent !important;
+  color: #ffffff; /* Text color */
+  font-size: 16px; /* Makes the text more legible */
+  transition: all 0.2s;
 }
 
 input::placeholder, textarea::placeholder {
@@ -78,11 +85,13 @@ textarea {
 }
 
 .progress-bar-container {
-    border-radius: 5px;
+    border: 1px solid #088ADB;
+    border-radius: 20px;
     width: 100%;
-    height: 10px;
+    height: 15px;
     background-color:  #0d1117;
-    margin: 20px 0; /* Add margin for spacing */
+    margin: 40px 0; /* Add margin for spacing */
+    margin-bottom: 40px;
   }
   
   .progress-bar {
@@ -152,7 +161,6 @@ textarea {
     border-radius: 8px;
     padding: 20px;
     height: 200px;
-
     font-size: 16px;
     text-align: center;
     color: #aaaaaa;
