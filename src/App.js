@@ -11,6 +11,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router} from "react-router-dom";
 import ProjectManagement from "./ESL/Components/ProjectManagement";
+import Faq from "./ESL/Components/Faq";
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
           <Route path="/contact" element={<ContactForm />}/>
           <Route path="/Testimonials" element={<Testimonials/>}/>
           <Route path="/Projets" element={<ProjectManagement />}/>
+          <Route path="/FAQ" element={<Faq />}/>
+
         </Routes>
           </main>
         <Footer/>
