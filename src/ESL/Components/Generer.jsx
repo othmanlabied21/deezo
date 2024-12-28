@@ -60,7 +60,7 @@ function ESLGenerate({ onBack }) {
                 return (
                   index < questions.length && (
                     <div className="form-group" key={index}>
-                      <label>{questions[index]}</label>
+                      <label className="labelG">{questions[index]}</label>
                       <input
                         type="text"
                         placeholder={questions[index]}
@@ -204,7 +204,7 @@ export default ESLGenerate;
 //                   return (
 //                     index < questions.length && (
 //                       <div className="form-group" key={index}>
-//                         <label>{questions[index]}</label>
+//                         <label className="labelG">{questions[index]}</label>
 //                         <input
 //                           type="text"
 //                           placeholder={questions[index]}

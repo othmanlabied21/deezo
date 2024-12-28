@@ -1,136 +1,134 @@
-/* Variables globales */
-:root {
-    --primary-color: #007bff;
-    --dark-bg: #0a0f1a;
-    --secondary-bg: #121826;
-    --border-color: #1f2937;
-    --text-color: #ffffff;
-    --button-hover: #0056b3;
-  }
-  
-  .container {
-    padding: 2rem 5%;
-    text-align: center;
-  }
-  
-  /* Titre principal */
-  .title, .subtitle {
-    color: #088ADB;
-    margin-bottom: 1.5rem;
-  }
+/* Global variables removed: values directly applied */
 
-  /* Section formulaire */
-  .form-section {
-    background-color: var(--secondary-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 2rem;
-    max-width: 600px;
-    margin: auto;
-    /* position: relative; */
-    border: #007bff 1px solid;
-    width: 50%;
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .back-btn {
-    position: absolute; 
-    top: 9.5rem; 
-    left: 5.5rem;
-    background: transparent;
-    color: #088ADB;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border: none;
+.container {
+  padding: 2rem 5%;
+  text-align: center;
+}
 
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-    text-align: left;
-    width: 100%;
+/* Titre principal */
+.title, .subtitle {
+  color: #088ADB;
+  margin-bottom: 1.5rem;
+}
 
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #1f2937;
-    color: var(--text-color);
-  }
 /* Section formulaire */
 .form-section {
   width: 800px;
   background-color: transparent;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid #088ADB;
-  border-radius: 20px;
+  border: 2px solid #088ADB;
+  border-radius: 40px;
   padding: 2rem;
   margin: auto;
-  border: #088ADB 1px solid;
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
 }
 
-/* Labels */
-label {
+.labelT {
   display: block;
   margin-bottom: 0.5rem;
-  text-align: left;
-  width: 100%; /* Stretch labels to full width of the form */
+  text-align: left; /* Ensures the text aligns to the left */
+  width: 100%; /* Takes up full width for alignment */
+  padding-left: 35px; /* Adds some spacing for better alignment */
+  color: #ffffff; /* Keeps label text color consistent with the theme */
+  font-size: 1rem; /* Ensures readability */
 }
 
-/* Inputs and Textarea */
-input,
-textarea {
-  width: 500px;
+
+.form-section input,
+.form-section textarea {
+  /* width: 100%; Adjusts to parent container */
+  width: 500px; /* Maximum width for large screens */
   padding: 0.8rem;
   margin-bottom: 1.5rem;
-  border: none;
   border-radius: 20px;
-  background-color: transparent;
-  /* color: var(--text-color); */
+  margin: auto;
+  border: 2px solid #088ADB; /* Adds a border for better visibility */
+  background-color: transparent !important;
+  color: #ffffff; /* Text color */
+  font-size: 16px; /* Makes the text more legible */
+  transition: all 0.2s;
 }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .reset-btn,
-  .submit-btn {
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #D0DDE5;
-  }
-  
-  .reset-btn {
-    background-color: #444b5a;
-    margin: 20px;
-  }
-  
-  .submit-btn {
-    background-color: #088ADB ;
-    margin: 20px;
 
+.form-section textarea {
+  width: 500px !important;
+  margin: auto !important;
+}
 
-  }
-  
-  .submit-btn:hover {
-    background-color: var(--button-hover);
-  }
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 300px;
+}
+
+.reset-btn,
+.submit-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #D0DDE5;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #088ADB;
+  margin: 20px;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.reset-btn:hover {
+  background-color: #088ADB;
+  color: #0a0e1a;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  margin: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.back-btn {
+  position: absolute; 
+  top: 9.5rem; 
+  left: 5.5rem;
+  background: transparent;
+  color: #088ADB;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+/* Section des propositions générées */
+.generated-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.generated-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px dashed #088ADB;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #1f2937;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-align: center;
+}

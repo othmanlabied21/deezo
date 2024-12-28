@@ -85,7 +85,7 @@
     gap: 10px;
   }
     .member-card {
-    background-color: #1a1a1a;
+    background-color: transparent;
     color: #ffffff;
     padding: 10px 20px;
     border: 1px solid #00aaff;
