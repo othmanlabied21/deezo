@@ -8,31 +8,38 @@ const TeamDetails = ({ team, onBack }) => {
 
   const handleAddMember = (newMember) => {
     setMembers([...members, newMember]); // Add the new member to the list
-    setShowForm(false); // Hide the form after adding the member
+    setShowForm(false); // Return to the members list after adding
   };
 
   return (
     <div className="team-details">
+      <div className="back">
       <button className="back-button" onClick={onBack}>
-        Retour
+        <i className="fa-solid fa-arrow-left"></i>
       </button>
       <h2>{team.name}</h2>
-      <ul className="member-list">
-        {members.map((member, index) => (
-          <li key={index} className="member-item">
-            {member.nom} {member.prenom} - {member.personnalite}
-          </li>
-        ))}
-      </ul>
+      </div>
       {!showForm ? (
-        <button
-          className="add-member-button"
-          onClick={() => setShowForm(true)}
-        >
-          Ajouter Membre
-        </button>
+        <div>
+          <ul className="member-list">
+            {members.map((member, index) => (
+              <li key={index} className="member-item">
+                {member.nom} {member.prenom} - {member.personnalite}
+              </li>
+            ))}
+          </ul>
+          <button
+            className="add-member-button"
+            onClick={() => setShowForm(true)} // Show the form
+          >
+            Ajouter Membre
+          </button>
+        </div>
       ) : (
-        <AddMemberForm onAddMember={handleAddMember} onClose={() => setShowForm(false)} />
+        <AddMemberForm
+          onAddMember={handleAddMember}
+          onClose={() => setShowForm(false)} // Close the form and return to the members list
+        />
       )}
     </div>
   );

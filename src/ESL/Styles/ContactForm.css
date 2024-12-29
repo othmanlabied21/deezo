@@ -4,22 +4,23 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url('../Images/Contact.png') no-repeat center center / contain;
+  background: url('../Images/Contact.png') no-repeat center center;
+  background-size: 80%; /* Adjust the size of the background image */
   margin: auto;
+  font-size: 18px; /* Set the font size for the entire component */
 }
 
 .group {
   position: relative;
-  margin-top: 70px;
   margin-bottom: 70px;
   transform: scale(0.75, 0.75);
 }
 
 .group h2 {
-  color:#088ADB ;
-  font-size: 2rem;
+  color: #088ADB;
   margin-bottom: 50px;
   text-align: center;
+  font-size: 40px;
 }
 
 .contact-form {
@@ -28,7 +29,7 @@
   padding: 30px;
   border-radius: 40px;
   width: 800px;
-  border: 2px solid #088ADB ;
+  border: 2px solid #088ADB;
   z-index: 1;
 }
 
@@ -38,34 +39,35 @@ form {
   align-items: center;
 }
 
-label {
-  font-size: 20px;
+.contact-form label {
+  font-size: 24px;
   color: #ffffff;
-  margin: 10px 0 5px;
-  margin-left: 235px;
+  margin: 10px 0;
   margin-bottom: 10px;
+  margin-right: 60%;
 }
 
 input,
 textarea {
-  border: 1px solid #088ADB ; 
+  border: 1px solid #088ADB;
   border-radius: 20px;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   padding: 10px;
   margin-bottom: 15px;
-  width: 80% ;
+  width: 80%;
   margin-bottom: 20px !important;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: #b7c3ca;
-  font-size: 14px;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px 20px;
 }
 
@@ -76,18 +78,19 @@ textarea {
 .submit {
   background-color: transparent; /* Bleu clair */
   color: #088ADB;
-  border:#088ADB  1px solid;
+  border: #088ADB 1px solid;
   border-radius: 30px;
   padding: 10px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
-  width: 20%;
-  margin : 20px 0px;
+  width: 25%;
+  margin: 20px 0px;
+  font-size: 24px;
 }
 
 .submit:hover {
-  background-color:#088ADB;
+  background-color: #088ADB;
   color: #0a0e1a;
   font-weight: 500;
 }

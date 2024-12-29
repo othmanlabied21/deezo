@@ -12,6 +12,8 @@ import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router} from "react-router-dom";
 import ProjectManagement from "./ESL/Components/ProjectManagement";
 import Faq from "./ESL/Components/Faq";
+import BoiteMessage from "./ESL/Components/BoiteMessage";
+import Guide from "./ESL/Components/Guide";
 
 
 function App() {
@@ -30,7 +32,8 @@ function App() {
           <Route path="/Testimonials" element={<Testimonials/>}/>
           <Route path="/Projets" element={<ProjectManagement />}/>
           <Route path="/FAQ" element={<Faq />}/>
-
+          <Route path="/BoiteMessage" element={<BoiteMessage/>}/>
+          <Route path="/Guide" element={<Guide/>} />
         </Routes>
           </main>
         <Footer/>

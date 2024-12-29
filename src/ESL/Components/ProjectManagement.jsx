@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import Projet2 from './Detaillesprojet'; // Assurez-vous que le chemin vers Projet2 est correct
 import Detaillesprojet from './Detaillesprojet'; // Importer le composant de détails du projet
 import '../Styles/ProjectManagement.css';
 
@@ -79,28 +78,24 @@ const ProjectManagement = () => {
                 onClick={() => handleProjectClick('Projet 1')}
               >
                 <span>Projet 1</span>
-                <button>→</button>
               </div>
               <div
                 className="project-card"
                 onClick={() => handleProjectClick('Projet 2')}
               >
                 <span>Projet 2</span>
-                <button>→</button>
               </div>
               <div
                 className="project-card"
                 onClick={() => handleProjectClick('Projet 3')}
               >
                 <span>Projet 3</span>
-                <button>→</button>
               </div>
               <div
                 className="project-card"
                 onClick={() => handleProjectClick('Projet 4')}
               >
                 <span>Projet 4</span>
-                <button>→</button>
               </div>
             </div>
           </div>

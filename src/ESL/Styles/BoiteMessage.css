@@ -1,0 +1,83 @@
+.generated-section {
+    position: relative;
+    margin-top: 100px;
+    padding: 30px;
+    width: 800px;
+    height: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #088ADB;
+    border-radius: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.generated-box {
+    border: 2px solid #088ADB;
+    border-radius: 40px;
+    width: 90%; /* Adaptive sizing */
+    height: 80%;
+    font-size: 16px;
+    background: transparent; /* Transparent background */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.generated-box h1 {
+    position: absolute;
+    top: 15%;
+}
+
+.input-cont {
+    position: relative; /* Changed to relative for positioning children */
+    width: 90%; /* Full width */
+    height: 60px; /* Fixed height */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+}
+
+.message-input {
+    flex-grow: 1; /* Allow input to take available space */
+    padding: 10px 20px;
+    background: rgba(29, 63, 102, 0.2); /* Transparent input background */
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.send-btn {
+    position: absolute; /* Absolute positioning within input-cont */
+    right: 10px; /* Right alignment */
+    width: 40px; /* Adjusted width for a better fit */
+    height: 40px; /* Adjusted height for a better fit */
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.send-icon:hover {
+    filter: brightness(1.2);
+}
+
+.powered {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-size: 14px;
+    color: #088ADB;
+}
+
+.send-icon {
+    color: #088ADB;
+    font-size: 20px; /* Size of the icon */
+    transition: all 0.2s;
+}

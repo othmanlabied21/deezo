@@ -29,7 +29,9 @@ nav {
   backdrop-filter: blur(30px);
   height: 65px;
   z-index: 10;
-  pointer-events: none;
+  pointer-events: none ;
+  display: flex;
+  align-items: center;
 }
 
 .navbar * {
@@ -94,3 +96,28 @@ nav {
     color: #088ADB !important;
   }
 }  
+
+
+@media only screen and (max-width: 768px) {
+  nav {
+    width: 90%;
+    padding: 0 10px;
+    height: 100px;
+  }
+
+  .navbar-nav {
+    display: none !important;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .profile {
+    width: 40px;
+  }
+}

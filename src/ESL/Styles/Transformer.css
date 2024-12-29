@@ -31,7 +31,7 @@
   margin-bottom: 0.5rem;
   text-align: left; /* Ensures the text aligns to the left */
   width: 100%; /* Takes up full width for alignment */
-  padding-left: 35px; /* Adds some spacing for better alignment */
+  padding-left: 150px; /* Adds some spacing for better alignment */
   color: #ffffff; /* Keeps label text color consistent with the theme */
   font-size: 1rem; /* Ensures readability */
 }
