@@ -2,72 +2,13 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-top: 120px;
     min-height: 450px;
   }
-  /* .add-team-btn {
-    background-color: transparent;
-    border: 2px solid #0088cc ;
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    transition: all 0.2s;
-    color: #0088cc;
-  } */
-
-  /* .add-team-btn:hover {
-    background-color: #0088cc;
-    color: #0a0e1a;
-  } */
-  
-  /* .equipes-main {
-    flex-grow: 1;
-  } */
-  
-  /* .equipes-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
-  } */
-  
-  /* .equipes-title {
-    font-size: 24px;
-    color: #00aaff;
-    margin: 0;
-  } */
-  
-  .team-list {
-    margin-top: 10px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-  }
-  
-  /* .team-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border: 2px solid #088ADB;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    cursor: pointer;
-    width: 100%;
-  } */
-/*   
-  .team-item svg {
-    width: 20px;
-    height: 20px;
-    fill: #D0DDE5;
-    rotate: 180deg;
-  } */
 
   .team-name {
     margin-left: 20px;
   }
-  /* Section des membres de l'équipe */
+
 .team-members {
     margin-top: 20px;
     text-align: center;
@@ -75,7 +16,7 @@
   
   .team-members h2 {
     font-size: 22px;
-    color: #00aaff;
+    color: #088ADB;
     margin-bottom: 10px;
   }
     .member-cards {
@@ -88,7 +29,7 @@
     background-color: transparent;
     color: #ffffff;
     padding: 10px 20px;
-    border: 1px solid #00aaff;
+    border: 1px solid #088ADB;
     border-radius: 5px;
     width: 100px;
     text-align: center;
@@ -108,7 +49,7 @@
     background-color: #1a1a1a;
     color: #ffffff;
     padding: 10px 20px;
-    border: 1px solid #00aaff;
+    border: 1px solid #088ADB;
     border-radius: 5px;
     width: 100px;
     text-align: center;
@@ -117,7 +58,7 @@
     .add-member-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #00aaff;
+    background-color: #088ADB;
     color: #ffffff;
     font-size: 16px;
     border: none;
@@ -135,17 +76,17 @@
     align-items: center;
   }
   .team-item:hover {
-    background-color: #00aaff;
+    background-color: #088ADB;
     color: #ffffff;
   }
 .team-item {
-    background-color: #1a1a1a;
+    background-color: transparent;
     color: #ffffff;
     padding: 10px 20px;
-    border: 1px solid #00aaff;
-    border-radius: 5px;
-    width: 70%; /* Updated width */
-    text-align: center;
+    border: 1px solid #088ADB;
+    border-radius: 15px;
+    width: 700px; /* Updated width */
+    text-align: left;
     transition: background-color 0.3s ease;
     margin: 10px auto; /* Centers the item horizontally */
   }
@@ -156,15 +97,18 @@
     align-items: center;
     margin-bottom: 20px;
   }
+
   .equipes-header h2 {
     color: #0095ff;
     font-size: 1.5rem;
-    margin: 0;  }
+    margin: 0;
+    margin-right: 600px;
+  }
+  
   .add-equipe-button {
-    background-color: #088ADB;
-    color: white;
-    border: none;
-    border-radius: 50%;
+    background-color: transparent;
+    color: #088ADB;
+    border-radius: 15px;
     width: 40px;
     height: 40px;
     font-size: 1.5rem;
@@ -172,6 +116,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    transition: all 0.2s;
+    border: 1px solid #088ADB;
+  }
+
+  .add-equipe-button:hover {
+    background-color: #088ADB;
+    color: #0a0e1a;
   }

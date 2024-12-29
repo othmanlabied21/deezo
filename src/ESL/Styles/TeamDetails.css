@@ -1,81 +1,78 @@
 .team-details {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* .back-button {
-    background-color: #00aaff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  } */
-  
-  .back-button:hover {
-    background-color: #0088cc;
-  }
-  
-  .member-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .member-item {
-    background-color: transparent;
-    color: #ffffff;
-    padding: 10px;
-    border: 1px solid #00aaff;
-    border-radius: 5px;
-    margin: 10px 0;
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .add-member-container {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: #1a1a1a;
-    width: 60%;
-  }
-  
-  .add-member-input {
-    padding: 10px;
-    border: 1px solid #00aaff;
-    border-radius: 5px;
-    /* width: 300px; */
-  }
-  
-  .add-member-button {
-    background-color: #00aaff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 150px;
-    margin-top: 10px;
-  }
-  
-  .add-member-button:hover {
-    background-color: #0088cc;
-  }
-  .add-member-button {
-    background-color: #00aaff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .add-member-button:hover {
-    background-color: #0088cc;
-  }
-  
+  text-align: center;
+}
+
+.back-button {
+  color: #088ADB;
+  filter: brightness(0.8);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-size: 30px;
+  transition: all 0.2s;
+  position: absolute;
+  left: 15%; /* Adjust this value as needed */
+}
+
+.back-button:hover {
+  filter: brightness(1);
+}
+
+.member-list {
+  list-style: none;
+  padding: 0;
+}
+
+.member-item {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px;
+  border: 1px solid #088ADB;
+  border-radius: 15px;
+  margin: 10px 0;
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.add-member-input {
+  padding: 10px;
+  border: 1px solid #088ADB;
+  border-radius: 5px;
+  /* width: 300px; */
+}
+
+.add-member-button {
+  background-color: transparent;
+  color: #088ADB;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 10px;
+  border: 1px solid #088ADB;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.add-member-button:hover {
+  background-color: #088ADB;
+  color: #0a0e1a;
+}
+
+.back {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back h2 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  color: white;
+}

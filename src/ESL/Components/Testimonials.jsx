@@ -49,11 +49,11 @@ const Testimonials = () => {
           <div className="user-info">
             <div className="avatar"></div>
             <div className="user-details">
-              <p className="user-name">Full Name</p>
-              <p className="date">Date</p>
+              <p className="user-name">zizooo</p>
+              <p className="date">Il y a 1h</p>
             </div>
           </div>
-          <p className="testimonial-text">Lorem ipsum lorem Lorem</p>
+          <p className="testimonial-text">Wow !</p>
           <div className="card-footer">
             <span className="likes">0 👍</span>
             <span className="replies">Reply</span>

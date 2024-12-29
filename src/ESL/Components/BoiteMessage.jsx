@@ -1,31 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import "../Styles/Detaillesprojet.css";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import "../Styles/BoiteMessage.css"
 
-function Detaillesprojet() {
-  const navigate = useNavigate();
-
-  const handleTeamClick = (teamId) => {
-    navigate(`/team/${teamId}`); // Navigate to the TeamDetails page with the team ID
-  };
-
-  const onBack = () => {
-    navigate('/ProjectManagement');
-  };
-
-  return (
-    <div className="project-container">
-      <main className="content">
-        {/* Bouton Retour avec icône */}
-        <button className="back-btn" onClick={onBack}>
-          <i className="fa-solid fa-arrow-left"></i> 
-        </button>
-        <h1>Projet 2</h1>
-        <div className="tags">
-          <span className="badge bg-primary team-badge" onClick={() => handleTeamClick(1)}>Equipe 1</span>
-          <span className="badge bg-primary team-badge" onClick={() => handleTeamClick(2)}>Equipe 2</span>
-        </div>
+const BoiteMessage = () => {
+    return (
         <div className="generated-section">
             <div className="generated-box">
             <h1>Que pensez-vous ?</h1>
@@ -55,9 +31,7 @@ function Detaillesprojet() {
             </svg>
             </div>
         </div>
-      </main>
-    </div>
-  );
+    )
 }
 
-export default Detaillesprojet;
+export default BoiteMessage;

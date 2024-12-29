@@ -9,15 +9,32 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: white;
 }
 
 .content {
   margin-top: 20px;
   flex: 1;
+  margin-top: 5%;
 }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+input, textarea {
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+label {
+  left: 35px;
+}
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 10px #088ADB;
+  border: 1px solid #088ADB;
+  outline: none;
 }

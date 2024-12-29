@@ -4,11 +4,14 @@
   background-size: cover; /* Ensures the image fills the section */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
-  height: 700px; /* Adjust to cover the top of the page */
+  height: 100%; /* Adjust to cover the top of the page */
   color: #fff;
-  position: relative;
-  z-index: 1;
-  min-height: 450px; /* Optional minimum height */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1; /* Ensure the image is behind other content */
 }
 
 #title {
@@ -24,6 +27,7 @@
 #title, #description {
   margin-left: 60px;
   width: 600px;
+  text-align: left;
 }
 
 .hero-button {
@@ -47,5 +51,5 @@
 }
 
 .hero-content {
-  margin-top: 9rem;
+  margin-top: 5rem;
 }

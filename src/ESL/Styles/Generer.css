@@ -32,9 +32,10 @@ main .p1 {
 }
 
 .form-group .labelG {
+  position: relative;
   display: block;
   margin-bottom: 0.5rem;
-  padding-left: 35px; /* Spacing to offset label */
+  padding-left: 125px; /* Spacing to offset label */
   color: white; /* Consistent label color */
   font-size: 20px; /* Ensures readability */
   text-align: left; /* Prevents centering */
@@ -137,40 +138,3 @@ textarea {
     border: 1px solid #13537b;
     color: #13537b;
   }
-  /* Section Propositions Générées */
-.generated-section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #161b22;
-    border: 1px solid #007bff ;
-    border-radius: 8px;
-    width: 50%;
-    margin: auto;
-
-  }
-  
-  .generated-section h2 {
-    color: #007bff ;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .generated-box {
-    background-color: #121212;
-    border: 1px solid #007bff ;
-    border-radius: 8px;
-    padding: 20px;
-    height: 200px;
-    font-size: 16px;
-    text-align: center;
-    color: #aaaaaa;
-  }
-  
-  .footer {
-    text-align: right;
-    background-color: #161b22;
-    color: #007bff ;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
