@@ -11,7 +11,7 @@ function Detaillesprojet() {
   };
 
   const onBack = () => {
-    navigate('/ProjectManagement');
+    navigate('/Projets');
   };
 
   return (
